@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Resume Layout */
+.resume {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 35%;
+    background-color: #c4a484; /* Soft Brown */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 5px 0;
+}
+
+/* Main Content */
+.main-content {
+    width: 65%;
+    padding: 20px;
+}
+
+.main-content h2 {
+    color: #333;
+    border-bottom: 2px solid #c4a484;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resume {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
